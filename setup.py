@@ -11,5 +11,10 @@ setup(
     ],
     author='Necrawldia',
     description='Lightweight network activity tracer for Python processes',
-    # url='https://github.com/yourname/netwatch',  # Optional
+    entry_points={
+    'console_scripts': [
+        'netwatcher = netwatch.cli:main',  # example
+        ],
+    },
+    url='https://github.com/jsrehiary/netwatch',  # Optional
 )
